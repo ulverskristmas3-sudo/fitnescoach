@@ -1,5 +1,9 @@
-export default {
-  async fetch(request) {
-    return Response.redirect("https://google.com", 301);
-  }
-};
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="refresh" content="0; url=https://google.com">
+  <script>
+    location.replace("https://google.com");
+  </script>
+</head>
+</html>
